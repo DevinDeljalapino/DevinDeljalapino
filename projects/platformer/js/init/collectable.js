@@ -3,17 +3,17 @@
   window.opspark = window.opspark || {};
   window.opspark.collectable = window.opspark.collectable || {};
   let collectable = window.opspark.collectable;
-
+ 
   let type = {
     db: { assetKey: "db", points: 10 },
     max: { assetKey: "max", points: 20 },
     steve: { assetKey: "steve", points: 30 },
     grace: { assetKey: "grace", points: 40 },
-    kennedi: { assetKey: "kennedi", points: 50 },
+    kennedi: { assetKey: "kennedi", points: 90 },
   };
-
+ 
   window.opspark.collectable.type = type;
-
+ 
   /**
    * init: Initialize all collectables.
    *
@@ -34,13 +34,19 @@
    */
   function init(game) {
     let createCollectable = collectable.create;
-
+ 
     ////////////////////////////////////////////////////////////////////////
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-
+ 
     // example:
-    createCollectable(type.steve, 200, 170, 6, 0.7);
-
+    createCollectable(type.db, 200, 170, 6, 0.7);
+    createCollectable(type.kennedi, 700, 160, 6, 0.7);
+    createCollectable(type.steve, 550, 390, 6, 0.7);
+    createCollectable(type.max, 550, 500, 6, 0.7);
+    createCollectable(type.grace, 600, 10, 6, 0.7)
+    createCollectable(type.kennedi, 10, 330, 6, 0.7);
+ 
+ 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
   }

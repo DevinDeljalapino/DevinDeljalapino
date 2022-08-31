@@ -31,7 +31,8 @@
         // create namespace on the game //
         game.opspark = {};
         game.opspark.init = function() {
-            game.stage.backgroundColor = "#E9EEF7";
+            game.stage.backgroundColor = "rgb(224, 63, 216)";
+            document.body.style.backgroundImage = "url(https://s3.envato.com/files/dce18b3a-9d8e-414e-892e-471334e96665/inline_image_preview.jpg)";
             game.physics.startSystem(Phaser.Physics.ARCADE);
             game.physics.arcade.TILE_BIAS = 2;
         };
