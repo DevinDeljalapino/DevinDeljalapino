@@ -21,6 +21,7 @@
         //game.load.image('kennedi', './asset/collectable/kennedi-head.png');
         game.load.image('max', './asset/collectable/troll.png');
         //game.load.image('max', './asset/collectable/max-head.png');
-        game.load.atlas('halle', './asset/halle/phaser-json-array/halle.png', './asset/halle/phaser-json-array/halle.json');
+        game.load.atlas('halle', './asset/halle/phaser-json-array/halle2.png', './asset/halle/phaser-json-array/halle.json');
+        //game.load.atlas('halle', './asset/halle/phaser-json-array/halle.png', './asset/halle/phaser-json-array/halle.json');
     };
 })(window);

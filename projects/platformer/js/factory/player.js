@@ -132,7 +132,7 @@
                 asset.body.bounce.y = 0;
                 game.add.tween(asset.body).to( { y: asset.body.y -100 }, 1000, Phaser.Easing.Linear.None, true);
 
-                asset.body.velocity.x = 200 * _direction;
+                asset.body.velocity.x =100 * _direction;
                 asset.x += xOffset * _direction;
                 asset.y += yOffset;
             };
@@ -149,6 +149,7 @@
          */
         function idle() {
             asset.animations.play('idle');
+            //asset.animations.play('idle');
             setState(_idle);
         }
         
@@ -169,7 +170,7 @@
          */
         function run() {
             asset.scale.x = _direction;
-            asset.body.velocity.x = 200 * _direction;
+            asset.body.velocity.x = 300 * _direction;
             asset.animations.play('run');
             setState(_run);
         }
@@ -223,7 +224,7 @@
             
             asset.body.offset.x += 10 * _direction;
             asset.body.offset.y -= 30;
-            asset.body.y -= 22;
+            asset.body.y -= 30;
             let onUpdate = function (anim, frame) {
                 console.log(frame.index);
                 if (frame.index < 52) {
