@@ -1,10 +1,14 @@
 <!DOCTYPE HTML>
 <html>
+
+<head>
     <style type="text/css">
         body {
+
             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnoAJP8DtnP-tAougTvNSrxVTZJ5EsliEdbxGKygXlkxB_L8eWzM_GQT58RMv1Hq3uLEw:https://wallpaperaccess.com/full/265607.jpg&usqp=CAU);
-            
+
         }
+
         header {
             font-size: 1.5em;
             font-weight: bold;
@@ -14,39 +18,43 @@
             max-width: 800px;
             margin: auto;
             color: rgb(255, 255, 255);
-                font-family:'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         /* navigation menu */
         nav {
             background: rgb(22, 0, 112);
-                margin: 0 auto;
-                margin-bottom: 20px;
-                border-radius: 10% / 50%;
-                display: flex;
-                padding: 10px;
-                border: 3px solid rgb(255, 255, 255);
-                font-family:'Times New Roman', Times, serif;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 10% / 50%;
+            display: flex;
+            padding: 10px;
+            border: 3px solid rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
         }
+
         h1 {
             display: flex;
-                align-items: center;
-                color: rgb(255, 255, 255);
-                font-family:'Times New Roman', Times, serif;
-                flex: 1;
-                margin: 0;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+            flex: 1;
+            margin: 0;
         }
+
         #nav-ul {
             list-style-image: none;
         }
+
         .nav-li {
             display: inline-block;
-                padding: 0 10px;
-                text-decoration: underline;     
-                text-decoration-color: white;
-                font-family:'Times New Roman', Times, serif;
-        
+            padding: 0 10px;
+            text-decoration: underline;
+            text-decoration-color: white;
+            font-family: 'Times New Roman', Times, serif;
+
         }
+
         .nav-a {
             text-decoration: none;
             color: rgb(255, 255, 255);
@@ -55,74 +63,74 @@
         /* main container area beneath menu */
         main {
             background: rgb(200, 0, 0);
-                display: flex;
-                border: 3px solid rgb(255, 255, 255);
+            display: flex;
+            border: 3px solid rgb(255, 255, 255);
         }
-        
+
+        .content h1{
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
+
+        /* portfolio styles */
         .content h1 {
-             color: rgb(255, 255, 255);
-             text-decoration: underline;
-         }
+            color: rgb(255, 255, 255);
+        }
 
-             /* portfolio styles */
-             .content h1 {
-             color: rgb(255, 255, 255);
-         }
+        #portfolio {
+            list-style-type: none;
+            padding-left: 10px;
+        }
 
-         #portfolio {
-             list-style-type: none;
-             padding-left: 0;
-             font-family:'Times New Roman', Times, serif;
-             color:white;
-         }
+        #portfolio li {
+            background: rgb(6, 6, 115);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
 
-         #portfolio li {
-             background: #fff;
-             padding: 10px;
-             border-radius: 10px;
-             margin-bottom: 10px;
-             color: rgb(255, 255, 255);
-            font-family:'Times New Roman', Times, serif;
-         }
+        #portfolio li:hover {
+            background: rgb(121, 8, 8);
+        }
 
-         #portfolio li:hover {
-             background: rgb(255, 255, 255);
-         }
-
-         #portfolio a {
-             text-decoration: none;
-             color: #ffffff;
-         }
+        #portfolio a {
+            text-decoration: none;
+            color: #ffffff;
+        }
     </style>
-    <head>
-        <title>Devin's Questionable Website</title>
-    </head>
 
-    <body>
-      <div id="all-contents">
+    <title>Devin's Questionable Website</title>
+</head>
+
+<body>
+    <div id="all-contents">
         <nav>
             <h1>Devins website</h1>
             <ul id="nav-ul">
-               <li class="nav-li">
-               <a class="nav-a" href="index.html">Home</a>
-             </li>
-            <li class="nav-li">
-               <a class="nav-a" href="portfolio.html">Portfolio</a>
-             </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="portfolio.html">Portfolio</a>
+                </li>
             </ul>
         </nav>
         <main>
             <div class="content">
                 <h1>Portfolio</h1>
-                <ul id="Portfolio">
-                    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
-                    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
-                    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                <ul id="portfolio">
+                    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure
+                            game for Halleb0t</a></li>
+                    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game
+                            development on the web </a></li>
+                    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and
+                            velocity applied to circle shapes...</a></li>
 
                 </ul>
             </div>
         </main>
 
-      </div>
-    </body>
+    </div>
+</body>
+
 </html>
