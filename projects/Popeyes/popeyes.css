@@ -1,0 +1,92 @@
+body {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5add65c6f407b40b053f74da/1597699744372-KWECTP1FBNQM7OIQO58W/Popeyes_pattern.jpg?format=2500w");
+    background-color: rgb(255, 124, 0);
+    display: block;
+
+   }
+
+   .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   #mainContent {
+    background-color: rgb(255, 124, 0);
+    color:white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 2px;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+   }
+   /* basically the "dattitle"*/
+   h1 {
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   }
+   h1 span {
+    background-color: rgb(255, 124, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 2px;
+   }
+   
+   a {
+  color: white;
+  float: none;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+  text-align:center;
+  display:block; 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+   }
+
+   a span {
+    background-color: rgb(255, 124, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-width: 3px;
+ 
+   }
+   .Popeyes {
+    background-color: rgb(255, 124, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 2px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+
+   /* unvisited link */
+  a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  /* visited link */
+  a:visited {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+    color: rgb(255, 0, 255);
+  }
+
