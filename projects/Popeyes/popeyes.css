@@ -3,7 +3,14 @@ body {
     background-color: rgb(255, 124, 0);
     display: block;
    }
-
+   hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    border: 1px solid orange;
+    background-color: orange;
+    }
    .center {
     display: block;
     margin-left: auto;
@@ -17,6 +24,7 @@ body {
     border-width: 2px;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 9px;
    }
    /* basically the "dattitle"*/
    h1 {
@@ -36,8 +44,7 @@ body {
   color: white;
   float: none;
   text-decoration: none;
-  font-size: 25px;
-  text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+  font-size: 20px;
   text-align:center;
   display:block; 
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -46,7 +53,8 @@ body {
    a span {
     background-color: rgb(255, 124, 0);
     border: 3px solid rgb(255, 255, 255);
-    border-width: 1.5px;
+    border-width: 1px;
+
    }
    .Popeyes {
     background-color: rgb(255, 124, 0);
@@ -63,12 +71,12 @@ body {
    /* unvisited link */
   a:link {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(198, 31, 50);
   }
   /* visited link */
   a:visited {
-    text-decoration: red underline dotted;
-    color: rgb(255, 0, 0);
+    text-decoration: rgb(198, 31, 50) underline dotted;
+    color: rgb(198, 31, 50);
   }
   
   /* mouse over link */
@@ -79,7 +87,7 @@ body {
   
   /* selected link */
   a:active {
-    text-decoration: rgb(255, 128, 0) wavy underline;
-    color: rgb(255, 124, 0);
+    text-decoration: rgb(255, 255, 255) wavy underline;
+    color: rgb(255, 255, 255);
   }
 
