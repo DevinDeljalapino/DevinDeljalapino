@@ -24,7 +24,8 @@ body {
     border-width: 2px;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 9px;
+    padding: 19px;
+    margin: 65px;
    }
    /* basically the "dattitle"*/
    h1 {
@@ -32,19 +33,21 @@ body {
     color:white;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
    }
    h1 span {
     background-color: rgb(255, 124, 0);
     border: 3px solid rgb(255, 255, 255);
     border-radius: 15px;
     border-width: 2px;
+    padding: 5.5px;
    }
    
    a {
   color: white;
   float: none;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22.5px;
   text-align:center;
   display:block; 
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -66,6 +69,7 @@ body {
     margin-right: auto;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 4px;
   }
 
    /* unvisited link */
