@@ -1,8 +1,7 @@
 body {
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5add65c6f407b40b053f74da/1597699744372-KWECTP1FBNQM7OIQO58W/Popeyes_pattern.jpg?format=2500w");
+    background-image: url(images.1/Popeyes_pattern.jpg);
     background-color: rgb(255, 124, 0);
     display: block;
-
    }
 
    .center {
@@ -18,7 +17,6 @@ body {
     border-width: 2px;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
    }
    /* basically the "dattitle"*/
    h1 {
@@ -26,7 +24,6 @@ body {
     color:white;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
    }
    h1 span {
     background-color: rgb(255, 124, 0);
@@ -44,14 +41,12 @@ body {
   text-align:center;
   display:block; 
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- 
    }
 
    a span {
     background-color: rgb(255, 124, 0);
     border: 3px solid rgb(255, 255, 255);
-    border-width: 3px;
- 
+    border-width: 1.5px;
    }
    .Popeyes {
     background-color: rgb(255, 124, 0);
@@ -63,9 +58,7 @@ body {
     margin-right: auto;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
   }
-
 
    /* unvisited link */
   a:link {
@@ -74,19 +67,19 @@ body {
   }
   /* visited link */
   a:visited {
-    text-decoration: none;
+    text-decoration: red underline dotted;
     color: rgb(255, 0, 0);
   }
   
   /* mouse over link */
   a:hover {
-    text-decoration: none;
+    text-decoration: white underline;
     color: rgb(240, 240, 240);
   }
   
   /* selected link */
   a:active {
-    text-decoration: none;
-    color: rgb(255, 0, 255);
+    text-decoration: rgb(255, 128, 0) wavy underline;
+    color: rgb(255, 124, 0);
   }
 
