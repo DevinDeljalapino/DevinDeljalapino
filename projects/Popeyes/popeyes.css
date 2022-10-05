@@ -1,4 +1,4 @@
-body {
+   body {
     background-image: url(images.1/Popeyes_pattern.jpg);
     background-color: rgb(255, 124, 0);
     display: block;
@@ -42,23 +42,25 @@ body {
     border-width: 2px;
     padding: 5.5px;
    }
-   
-   a {
-  color: white;
-  float: none;
-  text-decoration: none;
-  font-size: 22.5px;
-  text-align:center;
-  display:block; 
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   }
 
-   a span {
+   
+   span a {
     background-color: rgb(255, 124, 0);
     border: 3px solid rgb(255, 255, 255);
     border-width: 1px;
 
    }
+   
+   a {
+   color: white;
+   float: none;
+   text-decoration: none;
+   font-size: 22.5px;
+   text-align:center;
+   display:block; 
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
    .Popeyes {
     background-color: rgb(255, 124, 0);
     border: 3px solid rgb(255, 255, 255);
@@ -70,28 +72,29 @@ body {
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 4px;
-  }
+    text-decoration:underline
+   }
 
-   /* unvisited link */
-  a:link {
+    /* unvisited link */
+    a:link {
     text-decoration: none;
     color: rgb(198, 31, 50);
-  }
-  /* visited link */
-  a:visited {
+    }
+    /* visited link */
+    a:visited {
     text-decoration: rgb(198, 31, 50) underline dotted;
     color: rgb(198, 31, 50);
-  }
+    }
   
-  /* mouse over link */
-  a:hover {
+    /* mouse over link */
+    a:hover {
     text-decoration: white underline;
     color: rgb(240, 240, 240);
-  }
+    }
   
-  /* selected link */
-  a:active {
+    /* selected link */
+    a:active {
     text-decoration: rgb(255, 255, 255) wavy underline;
     color: rgb(255, 255, 255);
-  }
+    }
 
