@@ -52,7 +52,7 @@
    background-color:rgb(255, 124, 0);
    border: 3px solid rgb(255,255,255);
    opacity: .9;
-   width: 34%;
+   width: 32.90%;
    margin:auto;
    padding:3px;
 
@@ -61,7 +61,7 @@
    a {
    color: white;
    text-decoration: none;
-   font-size: 35px;
+   font-size: 34px;
    text-align:center;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    }
