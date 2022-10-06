@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-   #mainContent {
+   .mainContent {
     background-color: rgb(255, 124, 0);
     color:white;
     border: 3px solid rgb(255, 255, 255);
@@ -26,6 +26,8 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 19px;
     margin: 65px;
+    opacity: .9;
+    font-size: 22px;
    }
    /* basically the "dattitle"*/
    h1 {
@@ -33,6 +35,7 @@
     color:white;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 46px;
     
    }
    h1 span {
@@ -41,23 +44,25 @@
     border-radius: 15px;
     border-width: 2px;
     padding: 5.5px;
+    opacity: .9;
+    font-size: 46px;
    }
 
-   
-   span a {
-    background-color: rgb(255, 124, 0);
-    border: 3px solid rgb(255, 255, 255);
-    border-width: 1px;
+   nav {
+   background-color:rgb(255, 124, 0);
+   border: 3px solid rgb(255,255,255);
+   opacity: .9;
+   width: 34%;
+   margin:auto;
+   padding:3px;
 
    }
    
    a {
    color: white;
-   float: none;
    text-decoration: none;
-   font-size: 30px;
+   font-size: 35px;
    text-align:center;
-   display:block; 
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    }
 
@@ -67,34 +72,41 @@
     border-radius: 15px;
     border-width: 2px;
     color: white;
+    opacity: .9;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 4px;
     text-decoration:underline
+    
    }
 
     /* unvisited link */
     a:link {
     text-decoration: none;
     color: rgb(198, 31, 50);
+    text-shadow: 0 0 3px rgb(198,31,50), 0 0 5px rgb(198,31,50);
     }
     /* visited link */
     a:visited {
     text-decoration: rgb(198, 31, 50) underline dotted;
     color: rgb(198, 31, 50);
+    text-shadow: 0 0 3px rgb(198,31,50), 0 0 5px rgb(198,31,50);
     }
   
     /* mouse over link */
     a:hover {
     text-decoration: white underline;
     color: rgb(240, 240, 240);
+    text-shadow: 0 0 3px white, 0 0 5px white;
     }
   
     /* selected link */
     a:active {
     text-decoration: rgb(255, 255, 255) wavy underline;
     color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px white, 0 0 5px white;
     }
 
