@@ -52,18 +52,21 @@
    background-color:rgb(255, 124, 0);
    border: 3px solid rgb(255,255,255);
    opacity: .9;
-   width: 32.90%;
+   width: 60%;
    margin:auto;
-   padding:3px;
+   padding-top:13px;
+   padding-bottom:13px;
+   padding-left: 425px;
 
    }
-   
+
    a {
    color: white;
    text-decoration: none;
    font-size: 34px;
    text-align:center;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
    
    }
 
@@ -88,26 +91,29 @@
     a:link {
     text-decoration: none;
     color: rgb(198, 31, 50);
-    text-shadow: 0 0 3px rgb(198,31,50), 0 0 5px rgb(198,31,50);
+    text-shadow: 0 0 3px rgb(198,31,50), 0 0 5px rgb(198,31,50); 
+
     }
     /* visited link */
     a:visited {
-    text-decoration: rgb(255, 124, 0) underline;
+    text-decoration: none;
     color: rgb(255, 124, 0);
     text-shadow: 0 0 3px rgb(255, 124, 0), 0 0 5px rgb(255, 124, 0);
     }
   
     /* mouse over link */
     a:hover {
-    text-decoration: white underline;
+      
+    text-decoration: none;
     color: rgb(240, 240, 240);
-    text-shadow: 0 0 3px white, 0 0 5px white;
+    text-shadow: 0 0 3px white, 0 0 5px white; 
     }
   
     /* selected link */
     a:active {
-    text-decoration: rgb(255, 255, 255) wavy underline;
+
+     text-decoration: none;
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 3px white, 0 0 5px white;
+    text-shadow: 0 0 3px white, 0 0 5px white; 
     }
 
