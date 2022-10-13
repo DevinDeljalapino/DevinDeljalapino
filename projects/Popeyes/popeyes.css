@@ -52,11 +52,13 @@
    background-color:rgb(255, 124, 0);
    border: 3px solid rgb(255,255,255);
    opacity: .9;
-   width: 60%;
+   /*width: 60%; */
    margin:auto;
-   padding-top:13px;
+   /*padding-top:13px;
    padding-bottom:13px;
-   padding-left: 425px;
+   padding-left: 425px; */
+   text-align:center;
+   width: 34%;
 
    }
 
