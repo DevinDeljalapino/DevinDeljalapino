@@ -22,7 +22,7 @@
 			left: 680px; 
 		}
 		.board{
-			height: 100vh;
+			height: 94vh;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -31,6 +31,12 @@
 <body class="board">
 
 	<div class="box">?</div>
+
+	<audio controls autoplay>
+		<source src="music/mixkit-tech-house-vibes-130.mp3" type="audio/mp3">
+
+	  </audio>
+	  
 
 	<script>
 		(function(){
@@ -58,17 +64,17 @@
 
 			var points = 0;
 
-			var speed = 10;
+			var speed = 3;
 
 			var positionY = 0;
 
-			var speedY = 10;
+			var speedY = 3;
 
 			var boardHeight = jQuery(window).height(); 
 
-			var randomX = Math.random() *100 / boardWidth;
+			var randomX = Math.random() * boardWidth;
 
-			var randomY = Math.random() * 100 / boardHeight;
+			var randomY = Math.random() * boardHeight;
 
 			function update(){
 
@@ -78,13 +84,13 @@
 			
 				moveBoxTo(positionX, positionY);
 
-				if (positionX >= boardWidth) {
+				if (positionX >= boardWidth - 70) {
 					speed = speed * -1;
 				}
 				if (positionX < 0) {
 					speed = speed * -1;
 				}
-				if (positionY >= boardHeight) {
+				if (positionY >= boardHeight -70) {
 					speedY = speedY * -1;
 				}
 				if (positionY < 0) {
@@ -110,19 +116,19 @@
 				if (points % 3 === 0) {
 					speedY = speedY + 3;
 				}
-				if (speed > 0) {
+				if (speed >= 0) {
 					speed = speed + 3;
 				}
-				else if (speed < 0) {
+				else if (speed <= 0) {
 					speed = speed -3;
 				}
-				if (speedY > 0) {
+				if (speedY >= 0) {
 					speedY = speedY + 3;
 				}
-				else if (speedY < 0) {
+				else if (speedY <= 0) {
 					speedY = speedY -3;
 				}
-				if (points > 0) {
+				if (points >= 0) {
 					positionX = randomX;
 					positionY = randomY;
 				}
