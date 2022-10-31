@@ -72,10 +72,6 @@
 
 			var boardHeight = jQuery(window).height(); 
 
-			var randomX = Math.random() * boardWidth;
-
-			var randomY = Math.random() * boardHeight;
-
 			function update(){
 
 				positionX = positionX + speed;
@@ -103,7 +99,9 @@
 
 			function handleBoxClick() {
 
-				positionX = 0;
+				positionX = Math.random() * boardWidth;
+
+				positionY = Math.random() * boardHeight;
 
 				points = points + 1;
 
@@ -128,10 +126,7 @@
 				else if (speedY <= 0) {
 					speedY = speedY -3;
 				}
-				if (points >= 0) {
-					positionX = randomX;
-					positionY = randomY;
-				}
+
 			}
 
 			
