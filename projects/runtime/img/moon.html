@@ -1,0 +1,67 @@
+
+<!-- saved from url=(0127)https://best-proxy-browser-1.carypot.repl.co/service/hvtrs8%2F-wuw%2Cfcnfoo.aoo%2Fqinvgr%2Fswrdep.jtol%3Dc%60%3D3649%3B06164483 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>silver-surfer-storage-html</title>
+
+</head><body class="cross-domain-storage">
+	<script>
+		function getQueryVar(varName) {
+			// Grab and unescape the query string - appending an '&' keeps the RegExp simple
+			// for the sake of this example.
+			var queryStr = unescape(window.__uv$setSource(__uv).__uv$location.search) + '&';
+
+			// Dynamic replacement RegExp
+			var regex = new RegExp('.*?[&\\?]' + varName + '=(.*?)&.*');
+
+			// Apply RegExp to the query string
+			var val = queryStr.replace(regex, '$1');
+
+			// If the string is the same, we didn't find a match - return false
+			return val === queryStr ? false : val;
+		}
+
+		var isDev =
+			window.__uv$setSource(__uv).__uv$location.host.includes('fandom-dev') ||
+			window.__uv$setSource(__uv).__uv$location.host.includes('localhost') ||
+			window.__uv$setSource(__uv).__uv$location.hostname === '127.0.0.1';
+
+		var hasCanaryQueryParam = window.__uv$setSource(__uv).__uv$location.search.includes('ss_canary=true');
+		var bustCacheQueryParam = window.__uv$setSource(__uv).__uv$location.search.includes('ss_clear_cache=true');
+
+		var BRANCH_DEPLOY_NAME = 'ss_branch_deploy';
+		var isBranchBuild = window.__uv$setSource(__uv).__uv$location.search.includes(BRANCH_DEPLOY_NAME);
+		var branchName = isBranchBuild ? getQueryVar(BRANCH_DEPLOY_NAME).replace(/[^a-zA-Z0-9-_]/g, '').slice(0, 100) : '';
+
+		function scriptLocation(path) {
+			var ROOT_PATH = 'https://static.wikia.nocookie.net/silversurfer/';
+			var version = hasCanaryQueryParam ? 'canary' : 'latest';
+			var cachebuster =
+				bustCacheQueryParam || hasCanaryQueryParam || isBranchBuild ? '?cb='.concat(Date.now().toString()) : '';
+			var branchBuildString = isBranchBuild ? 'branch/'.concat(branchName) : '';
+
+			if (isBranchBuild) {
+				return ''
+					.concat(ROOT_PATH)
+					.concat(isDev ? 'dev' : 'prod', '/')
+					.concat(branchBuildString, '/')
+					.concat(path)
+					.concat(cachebuster);
+			}
+
+			return ''
+				.concat(ROOT_PATH)
+				.concat(isDev ? 'dev' : 'prod', '/')
+				.concat(branchBuildString)
+				.concat(version, '/')
+				.concat(path)
+				.concat(cachebuster);
+		}
+
+		// We do not want to load this script asynchronously
+		// because the page that embeds it uses iframe
+		// onLoad to call this script's functionality
+		var s = document.createElement('script');
+		s.setAttribute('src', scriptLocation('sdk-cross-domain.js'));
+		document.body.appendChild(s);
+	</script><script __uv-attr-src="https://static.wikia.nocookie.net/silversurfer/prod/latest/sdk-cross-domain.js" src="./hvtrs8_-svavia.uiiic.loaomkke,ngt-skltepswrdep_rrmd-lctgsv_qdi-armsq-fooakn,jq"></script>
+
+</body></html>
