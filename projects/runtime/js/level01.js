@@ -69,6 +69,29 @@ var level01 = function (window) {
         fire (1300,495);
         fire (3000,495);
 
+        // var enemy = game.createGameItem("enemy", 25);
+        // var redSquare = draw.rect(60, 120, "red");
+        // redSquare.x = -30;
+        // redSquare.y = -57.5;
+        // enemy.addChild(redSquare);
+        // enemy.x = 750;
+        // enemy.y = groundY - 50;
+        // game.addGameItem(enemy);
+        // enemy.velocityX = -.5;
+        // //enemy.rotationalVelocity =1;
+        // //enemy.velocityY =;
+        // enemy.onPlayerCollision = function zombie () {
+        // game.changeIntegrity(-25);
+        // }
+
+        // enemy.onProjectileCollision = function health () {
+        //     game.increaseScore(1000);
+        //     //enemy.fadeOut();
+        //     //enemy.shrink();
+        //     enemy.flyTo(1000,350);
+
+        // }
+        function createEnemy (x, y) {
         var enemy = game.createGameItem("enemy", 25);
         var redSquare = draw.rect(60, 120, "red");
         redSquare.x = -30;
@@ -77,13 +100,23 @@ var level01 = function (window) {
         enemy.x = 750;
         enemy.y = groundY - 50;
         game.addGameItem(enemy);
-        enemy.velocityX = -.5;
+        enemy.velocityX = -.85;
         //enemy.rotationalVelocity =1;
         //enemy.velocityY =;
-        enemy.onPlayerCollision = function zombie () {
+        enemy.onPlayerCollision = function () {
         game.changeIntegrity(-25);
         }
-
+        enemy.onProjectileCollision = function () {
+            game.increaseScore(1000);
+            //enemy.fadeOut();
+            //enemy.shrink();
+            enemy.flyTo(1000,350);
+        }
+        }
+        createEnemy(1090, 500)
+        createEnemy(2000,500)
+        createEnemy(1250,500)
+        createEnemy(700,500)
 
         
         
