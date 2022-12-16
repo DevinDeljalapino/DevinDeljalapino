@@ -61,6 +61,7 @@ var background = function (window) {
             
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             for (var i = 0; i < 5; ++i) {
+
             var buildingHeight = 160;
             //var building = draw.rect(75, buildingHeight, "LightGray", "Black", 1);
             // var building = draw.bitmap("img/123.png");
@@ -68,6 +69,7 @@ var background = function (window) {
             building.y = groundY - buildingHeight;
             background.addChild(building);
             buildings.push(building);
+            
 }
             
             
@@ -76,12 +78,18 @@ var background = function (window) {
             tree.x = 200;
             tree.y = groundY - 215;
             background.addChild(tree);
+            background.addChild(building2)
+            building2.x = 200 * i;
+            building2.y = groundY - 122.5;
+            buildings.push(building2);
             
             
         } // end of render function - DO NOT DELETE
         var tree = draw.bitmap("img/9.png");
-        var building = draw.bitmap("img/123.png");
+        // var building = draw.bitmap("img/123.png");
         var buildings = [];
+        var building = draw.bitmap("img/123.png");
+        var building2 = draw.bitmap("img/villager.png");
         
         // Perform background animation
         // called on each timer "tick" - 60 times per second
@@ -101,10 +109,15 @@ var background = function (window) {
             
             // TODO 5: Part 2 - Parallax
             building.x = building.x -1;
+            building2.x = building2.x -1.3;
 
             if(building.x < -200) {
                 building.x = canvasWidth;
             }
+            if(building2.x < -200) {
+                building2.x = canvasWidth;
+            }
+
 
             
 
