@@ -17,24 +17,53 @@ var level01 = function (window) {
             "speed": -3,
             "gameItems": [
                 { "type": "sawblade", "x": 400, "y": groundY -95 },
-                { "type": "sawblade", "x": 1500, "y": groundY - 10 },
-                { "type": "sawblade", "x": 900, "y": groundY },
-                { "type": "fire", "x": 1200, "y": groundY },
-                { "type": "enemy", "x": 1700, "y": groundY },
-                { "type": "reward", "x": 2000, "y": groundY },
+                { "type": "sawblade", "x": 1500, "y": groundY - 10},
+                { "type": "sawblade", "x": 765, "y": groundY - 20},
+                { "type": "sawblade", "x": 1800, "y": groundY - 100},
+                { "type": "sawblade", "x": 2200, "y": groundY - 40},
+                { "type": "fire", "x": 2300, "y": groundY - 10},
+                { "type": "fire", "x": 1300, "y": groundY - 10},
+                { "type": "fire", "x": 3000, "y": groundY - 10},
+                { "type": "enemy", "x": 1090, "y": groundY - 70},
+                { "type": "enemy", "x": 2000, "y": groundY - 70},
+                { "type": "enemy", "x": 1250, "y": groundY - 70},
+                { "type": "enemy", "x": 700, "y": groundY - 70},
+                { "type": "enemy", "x": 2300, "y": groundY - 70},
+                { "type": "reward", "x": 1090, "y": groundY - 10},
+                { "type": "reward", "x": 1750, "y": groundY - 20},
+                { "type": "reward", "x": 2000, "y": groundY - 30},
             ]
             
         };
-        var firstGameItemObject = levelData.gameItems[0];
-        var firstX = firstGameItemObject.x;
-        var firstY = firstGameItemObject.y;
-        createSawBlade(firstX, firstY);
+        // var firstGameItemObject = levelData.gameItems[0];
+        // var firstX = firstGameItemObject.x;
+        // var firstY = firstGameItemObject.y;
+        function objects () {
         for (var i = 0; i < levelData.gameItems.length; i++) {
         var eachElement = levelData.gameItems[i];
-        
+        var X = eachElement.x;
+        var Y = eachElement.y;
 
-  // code to do something with each element
+        if (eachElement.type === "sawblade") {
+            createSawBlade(X,Y);
+        }
+        else if (eachElement.type === "fire"){
+            fire (X,Y);
+        }
+        else if (eachElement.type === "enemy"){
+            createEnemy(X,Y);
+        }
+        else {
+            createReward(X,Y);
+        }
+        
+        
 }
+        }
+        objects();
+        if (eachElement === levelData.gameItems.length){
+            objects();
+        }
 
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
@@ -60,11 +89,11 @@ var level01 = function (window) {
         // y = 0;
         }
 
-        createSawBlade(400, groundY - 95);
-        createSawBlade(1500, groundY - 10);
-        createSawBlade(765,groundY - 20);
-        createSawBlade(1800,groundY - 100);
-        createSawBlade(2200,groundY - 40);
+        // createSawBlade(400, groundY - 95);
+        // createSawBlade(1500, groundY - 10);
+        // createSawBlade(765,groundY - 20);
+        // createSawBlade(1800,groundY - 100);
+        // createSawBlade(2200,groundY - 40);
 
         function fire (x, y) {
         var hitZoneSize = 35;
@@ -80,9 +109,9 @@ var level01 = function (window) {
         x = 0;
         y = 0;
 }
-        fire (2300,groundY - 10);
-        fire (1300,groundY - 10);
-        fire (3000,groundY - 10);
+        // fire (2300,groundY - 10);
+        // fire (1300,groundY - 10);
+        // fire (3000,groundY - 10);
 
         // var enemy = game.createGameItem("enemy", 25);
         // var redSquare = draw.rect(60, 120, "red");
@@ -129,11 +158,11 @@ var level01 = function (window) {
             enemy.flyTo(1000,350);
         }
         }
-        createEnemy (1090,groundY - 70);
-        createEnemy (2000,groundY - 70);
-        createEnemy (1250,groundY - 70);
-        createEnemy (700,groundY - 70);
-        createEnemy (2300,groundY - 70);
+        // createEnemy (1090,groundY - 70);
+        // createEnemy (2000,groundY - 70);
+        // createEnemy (1250,groundY - 70);
+        // createEnemy (700,groundY - 70);
+        // createEnemy (2300,groundY - 70);
 
         function createReward (x, y){
         var goldenApple = game.createGameItem("goldenApple", 25);
@@ -160,9 +189,9 @@ var level01 = function (window) {
         
 
         }
-        createReward (1090,groundY - 10); 
-        createReward (1750,groundY - 20); 
-        createReward (2000,groundY - 30); 
+        // createReward (1090,groundY - 10); 
+        // createReward (1750,groundY - 20); 
+        // createReward (2000,groundY - 30); 
 
     
         
